@@ -1,8 +1,8 @@
-import './App.css';
+import Body from './pages/body/Body';
 
 function App() {
   return (
-    <div className="App text-3xl">NetFlix</div>
+    <Body></Body>
   );
 }
 
