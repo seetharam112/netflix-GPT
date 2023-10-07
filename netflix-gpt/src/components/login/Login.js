@@ -72,10 +72,10 @@ const Login = () => {
   return (
     <div>
         <Header/>
-        <div className="absolute">
+        <div className="sm:absolute">
         <img src='https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg' alt=''></img>
         </div>
-        <form onSubmit={(e) => e.preventDefault()} className="absolute w-4/12 bg-black p-12 my-36 mx-auto left-0 right-0 text-white bg-opacity-90">
+        <form onSubmit={(e) => e.preventDefault()} className="sm:absolute w-100 md:w-100 bg-black p-6 sm:p-12 sm:my-36 mx-auto left-0 right-0 text-white bg-opacity-90 sm:w-4/12">
             <h1 className='font-bold text-3xl pt-0 pb-4 m-2'>{ isSignInForm ? "Sign In" : "Sign Up"}</h1>
             { !isSignInForm &&
             <input type='text' ref={name} placeholder='Full Name' className='p-4 m-2 w-full bg-gray-800 rounded-lg'/>
